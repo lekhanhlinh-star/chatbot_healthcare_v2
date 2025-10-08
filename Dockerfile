@@ -55,7 +55,7 @@ RUN ollama serve & \
         sleep 2; \
     done && \
     echo "Ollama server is ready! Pulling models..." && \
-    ollama pull qwen3:14b && \
+    ollama pull qwen2.5:14b && \
     ollama pull bge-m3 && \
     echo "Models pulled successfully!" && \
     kill $OLLAMA_PID && \
