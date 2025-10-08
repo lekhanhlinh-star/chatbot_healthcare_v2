@@ -30,7 +30,7 @@ myuuid = uuid.uuid4()
 app = FastAPI()
 
 UPLOAD_FOLDER = "temp"
-AUDIO_CLONE = "static"
+AUDIO_x CLONE = "static"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 #init model here
 print("init model")
@@ -91,6 +91,10 @@ async def upload_audio(audio: UploadFile = File(...)):
     # ví dụ: result = my_asr(filepath)
     answer = cc.convert(result['text'])
     return {"text": answer}
+
+@app.get("/ping")
+async def ping():
+    return {"status": "healthy"}
 
 @app.post("/ask")
 async def ask(
