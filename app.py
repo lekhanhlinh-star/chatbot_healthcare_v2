@@ -30,7 +30,7 @@ myuuid = uuid.uuid4()
 app = FastAPI()
 
 UPLOAD_FOLDER = "temp"
-AUDIO_x CLONE = "static"
+AUDIO_CLONE = "static"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 #init model here
 print("init model")
