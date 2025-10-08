@@ -31,7 +31,7 @@ try:
 
     # Shared Reranker Model
     print("Loading reranker model: BAAI/bge-reranker-v2-m3...")
-    shared_reranker = HuggingFaceCrossEncoder(model_name="./models/bge-reranker-v2-m3")
+    shared_reranker = HuggingFaceCrossEncoder(model_name="BAAI/bge-reranker-v2-m3")
     shared_compressor = CrossEncoderReranker(model=shared_reranker, top_n=5)
 
     print("✅ All shared models loaded successfully!")
