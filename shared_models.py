@@ -20,9 +20,9 @@ try:
     shared_embeddings = OllamaEmbeddings(model="bge-m3")
 
     # Shared Chat Model  
-    print("Loading chat model: qwen3:14b...")
+    print("Loading chat model: qwen2.5:14b...")
     shared_chat_model = ChatOllama(
-        model="qwen3:14b",
+        model="qwen2.5:14b",
         temperature=0.2,
         top_k=40,
         top_p=0.9,
